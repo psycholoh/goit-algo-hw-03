@@ -19,7 +19,7 @@ if days_difference is not None:
 
 import random
 def get_numbers_ticket(min, max, count):
-    if min > max or min < 1 or (max-min)<count:
+    if min > max or min < 1 or (max-min+1)<count:
         return[]
     numbers = random.sample(range(min, max + 1), count)
     return sorted(numbers)
